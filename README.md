@@ -1,1526 +1,955 @@
-# CareerBuddy SA
+# 🎓 CareerBuddy SA
 
-CareerBuddy SA — AI Career Mentor for South African Pupils
+### 🇿🇦 AI Career Mentor for South African Pupils
 
-1. Project Overview
+> **Your Future Starts Here. 🚀**
 
-Build a modern, mobile-first web application called CareerBuddy SA.
+**CareerBuddy SA** is an AI-powered career mentor designed specifically for **South African Grade 9–12 pupils**.
 
-CareerBuddy SA is a specialised AI Career Mentor designed specifically for South African Grade 9–12 pupils.
+Instead of being another general-purpose chatbot, CareerBuddy focuses on one problem:
 
-The application must NOT feel like a general-purpose chatbot such as ChatGPT.
+> 🎯 **Helping pupils understand their strengths, explore realistic career options, make better subject and study decisions, and plan their future.**
 
-Its single purpose is:
+---
 
-Help South African pupils understand themselves, explore realistic career options, make better subject and study decisions, and plan their future.
+## 👥 Team Tech Geeks
 
-The core experience should be:
+**Built with 💻 by Tech Geeks**
 
-Ask → Understand → Guide → Explain → Encourage → Plan
+We are a team passionate about using technology and AI to create solutions that solve meaningful, real-world problems.
 
-Keep the application intentionally simple. Do not add unnecessary tools, dashboards, quizzes, career databases, trackers or separate feature pages.
+Our goal with CareerBuddy SA is to make career guidance:
 
-The AI Career Mentor chatbot is the main and only feature.
+**Simple → Personalised → Accessible → South African → Encouraging**
 
-2. STRICT PRODUCT SCOPE
+---
 
-The application should contain only:
+## 🌟 Why CareerBuddy?
 
-Sign Up / Login
+Choosing a career can be difficult.
 
-Grade selection during registration
+A pupil might ask:
 
-AI Career Mentor chatbot
+* 🤔 *"I don't know what career I want."*
+* 📚 *"Which subjects should I choose?"*
+* 💻 *"What can I become if I enjoy coding?"*
+* 📐 *"What careers can I do with Mathematics?"*
+* 🎓 *"Should I go to university or TVET?"*
+* 😟 *"I'm in Grade 12 and still don't know what to study."*
 
-Basic account and security settings
+CareerBuddy turns these questions into a **friendly conversation with an AI career mentor**.
 
-DO NOT BUILD:
+The experience follows:
 
-Career Explorer pages
+```text
+💬 Ask
+   ↓
+🧠 Understand
+   ↓
+🧭 Guide
+   ↓
+📖 Explain
+   ↓
+💙 Encourage
+   ↓
+🚀 Plan
+```
 
-Career database pages
+---
 
-Career quiz
+# 🎯 Our Mission
 
-Bursary finder
+> **To help South African pupils make better-informed decisions about their education and future careers.**
 
-Opportunity radar
+CareerBuddy is designed to help pupils explore possibilities rather than pressure them into choosing one career.
 
-Institution explorer
+It should feel like:
 
-Career roadmap dashboard
+> 🧑‍🎓 **A personal AI career mentor sitting next to a pupil and helping them figure out what they could do with their future.**
 
-Skills challenges
+---
 
-Interview simulator
+# ✨ Key Features
 
-CV builder
+## 🧠 Personalised AI Career Mentor
 
-Application tracker
+CareerBuddy doesn't simply answer questions.
 
-Teacher dashboard
+It progressively understands the pupil's context, including:
 
-Parent dashboard
+* 🎓 Grade
+* 📚 Favourite subjects
+* 📈 Strong subjects
+* 📉 Subjects they struggle with
+* ❤️ Interests
+* 🎨 Hobbies
+* 💪 Strengths
+* 🛠️ Skills
+* 🧠 Personality
+* 👥 Preferred work environment
+* 💻 Interest in technology
+* 🔢 Interest in numbers
+* 🎨 Interest in creativity
+* 🌱 Interest in nature
+* 💼 Career interests
+* 💭 Concerns about the future
+* 🗣️ Previous career discussions
 
-Admin dashboard
+This allows CareerBuddy to provide increasingly personalised guidance during a conversation.
 
-Separate subject mapper
+---
 
-Separate career comparison tool
+## 🎓 Grade-Aware Guidance
 
-Complex navigation
+CareerBuddy adapts its advice according to the pupil's current grade.
 
-Unnecessary landing-page tools
+| Grade           | CareerBuddy Focus                                              |
+| --------------- | -------------------------------------------------------------- |
+| 🟢 **Grade 9**  | Interests, strengths and subject choices                       |
+| 🔵 **Grade 10** | Subjects, careers, qualifications and pathways                 |
+| 🟡 **Grade 11** | Career decisions, requirements and study options               |
+| 🔴 **Grade 12** | Applications, funding, qualifications and post-school pathways |
 
-Generic AI assistant functionality
+The pupil selects their grade during registration, allowing the AI to make its guidance more relevant.
 
-If information such as careers, subjects, qualifications or study pathways is needed, CareerBuddy should provide it naturally inside the conversation.
+---
 
-3. CORE DIFFERENTIATOR
+# 🇿🇦 Built for South Africa
 
-CareerBuddy should not simply answer questions.
+CareerBuddy is specifically designed around the **South African education and career environment**.
 
-It should behave like a personal career mentor.
+It understands common school subjects such as:
 
-The AI should remember the context of the current conversation and progressively understand the pupil.
+* 📐 Mathematics
+* ➗ Mathematical Literacy
+* ⚛️ Physical Sciences
+* 🧬 Life Sciences
+* 💰 Accounting
+* 📊 Business Studies
+* 📈 Economics
+* 🌍 Geography
+* 📜 History
+* 💻 Information Technology
+* 🖥️ Computer Applications Technology
+* 🏗️ Engineering Graphics and Design
+* 🎨 Visual Arts
+* ✏️ Design
+* ✈️ Tourism
+* 🌱 Agricultural Sciences
+* ❤️ Life Orientation
+* 🗣️ Languages
 
-For example, it should consider:
+It also understands different post-school pathways.
 
-Grade
+### 🎓 Education Pathways
 
-Favourite subjects
+* 🏛️ Universities
+* 🧑‍🔧 Universities of Technology
+* 🏫 TVET Colleges
+* 🏢 Private institutions
+* 💼 Learnerships
+* 🔧 Apprenticeships
+* 📚 Skills programmes
 
-Subjects they perform well in
+CareerBuddy reinforces an important message:
 
-Subjects they struggle with
+> **"University is one pathway, but it isn't the only one."**
 
-Interests
+---
 
-Hobbies
+# 💬 "I Have No Idea" Mode
 
-Strengths
+Not knowing what career you want is completely okay.
 
-Skills
+CareerBuddy provides a friendly starting point:
 
-Personality
+> 💭 **"I have no idea what career I want."**
 
-Preferred work environment
+Instead of forcing the pupil through a traditional career quiz, the AI starts a conversation.
 
-Whether they enjoy working with people, technology, numbers, creativity, nature or practical tasks
+### Example
 
-Career interests
+**Question 1**
 
-Concerns about their future
+> 📚 What subjects do you enjoy most at school?
 
-Previous career options discussed
+↓
 
-The AI should use this information to make its responses increasingly personalised.
+**Question 2**
 
-4. CAREERBUDDY AI PERSONALITY
+> 🎮 What do you normally enjoy doing outside school?
 
-CareerBuddy should feel:
+↓
 
-Friendly
+**Question 3**
 
-Encouraging
+> 💻 Would you rather work with people, computers, numbers, creative ideas, nature or practical things?
 
-Patient
+↓
 
-Approachable
+**Result**
 
-Non-judgemental
+CareerBuddy gradually identifies possible career areas.
 
-Youthful
+### 🎯 The goal
 
-Knowledgeable
+> **Career exploration should feel like a conversation — not a test.**
 
-Honest
+---
 
-Supportive
+# 💼 Career Exploration
 
-South African
+CareerBuddy can explain careers in simple, pupil-friendly language.
 
-Use simple English by default.
+For a career, it can discuss:
 
-Avoid unnecessarily complicated terminology.
+* 🔎 What the career is
+* 🧑‍💻 What professionals actually do
+* 📋 Typical responsibilities
+* 🏢 Where they work
+* 🛠️ Useful skills
+* 📚 Helpful school subjects
+* 🎓 Possible qualifications
+* ⏱️ Approximate study duration
+* 🚪 Entry-level opportunities
+* 📈 Career progression
+* 🔗 Related careers
+* ⚠️ Challenges
+* ⭐ Advantages
 
-Explain difficult concepts in language appropriate for a Grade 9–12 pupil.
+---
 
-For example, instead of:
+# 📚 Subject → Career Guidance
 
-"A software engineer develops scalable software systems using programming paradigms."
+CareerBuddy can naturally connect subjects to possible career areas.
 
-Say:
-
-"A software developer builds apps, websites and computer programs using code."
-
-The AI should explain unfamiliar terminology whenever necessary.
-
-5. IMPORTANT: DO NOT FORCE CAREER RECOMMENDATIONS
-
-CareerBuddy should never immediately tell a pupil:
-
-"You should become a software developer."
-
-Instead, it should ask questions and understand the pupil first.
-
-Example conversation:
-
-Pupil:
-
-I don't know what career I want.
-
-CareerBuddy:
-
-That's completely okay! You don't need to have everything figured out yet. Let's work it out together. 😊
-
-First question: which school subjects do you enjoy the most?
-
-Then continue with one or two questions at a time.
-
-The AI should gradually identify possible career areas.
-
-Always present multiple possibilities where appropriate.
-
-Use language such as:
-
-"You might enjoy..."
-
-"This could be a good option because..."
-
-"Another career worth exploring is..."
-
-Never make the pupil feel that one career is their only option.
-
-6. SOUTH AFRICAN CONTEXT
-
-CareerBuddy must be specifically designed around the South African education and career environment.
-
-Understand and appropriately reference:
-
-School grades
-
-Grade 9
-
-Grade 10
-
-Grade 11
-
-Grade 12
-
-School subjects
-
-Examples include:
-
-Mathematics
-
-Mathematical Literacy
-
-Physical Sciences
-
-Life Sciences
-
-Accounting
-
-Business Studies
-
-Economics
-
-Geography
-
-History
-
-Computer Applications Technology
-
-Information Technology
-
-Engineering Graphics and Design
-
-Visual Arts
-
-Design
-
-Tourism
-
-Agricultural Sciences
-
-Life Orientation
-
-Languages
-
-Do not assume every school offers every subject.
-
-7. GRADE-AWARE AI
-
-During registration, pupils must select:
-
-Grade 9
-
-Grade 10
-
-Grade 11
-
-Grade 12
-
-Save the selected grade to their user profile.
-
-CareerBuddy must automatically adapt its advice based on the pupil's grade.
-
-Grade 9
-
-Focus on:
-
-Discovering interests
-
-Understanding strengths
-
-Exploring career areas
-
-Understanding subject choices
-
-Explaining possible Grade 10 pathways
-
-Encouraging exploration rather than pressure
-
-Example:
-
-"Since you're choosing your Grade 10 subjects soon, let's look at careers that connect with the subjects you enjoy."
-
-Grade 10
-
-Focus on:
-
-Connecting subjects to careers
-
-Exploring career options
-
-Understanding qualifications
-
-Exploring universities, universities of technology and TVET colleges
-
-Building useful skills
-
-Understanding possible career pathways
-
-Grade 11
-
-Focus on:
-
-Narrowing down career interests
-
-Qualification requirements
-
-University and TVET options
-
-Admission requirements
-
-Funding and bursary awareness
-
-Career preparation
-
-Building experience and skills
-
-Grade 12
-
-Focus on:
-
-Post-school decisions
-
-University applications
-
-TVET options
-
-Qualifications
-
-Bursaries and funding
-
-Application preparation
-
-Alternative pathways
-
-Interviews
-
-Work opportunities
-
-Learnerships and internships
-
-The AI should always consider the pupil's grade before giving advice.
-
-8. CAREER GUIDANCE CAPABILITIES
-
-Inside the chatbot, CareerBuddy should be able to explain:
-
-Career Discovery
-
-Help pupils discover careers based on:
-
-Subjects
-
-Interests
-
-Strengths
-
-Personality
-
-Hobbies
-
-Skills
-
-Work preferences
-
-Career Explanation
-
-When a pupil asks about a career, explain:
-
-What the career is
-
-What people actually do
-
-Typical responsibilities
-
-Where they work
-
-Useful skills
-
-School subjects that can help
-
-Possible qualifications
-
-Approximate study duration
-
-Possible entry-level roles
-
-Possible career progression
-
-Related careers
-
-Challenges
-
-Advantages
-
-Keep explanations appropriate for pupils.
-
-9. SUBJECT → CAREER GUIDANCE
-
-CareerBuddy should naturally connect school subjects to career possibilities.
-
-Examples:
-
-Mathematics + Physical Sciences
+### 📐 Mathematics + ⚛️ Physical Sciences
 
 Possible areas:
 
-Engineering
+* ⚙️ Engineering
+* 💻 Computer Science
+* 📊 Data Science
+* 📈 Actuarial Science
+* 🔬 Physics
+* 💡 Technology
 
-Computer Science
-
-Data Science
-
-Actuarial Science
-
-Physics
-
-Technology
-
-Mathematics + Accounting
+### 📐 Mathematics + 🧾 Accounting
 
 Possible areas:
 
-Accounting
+* 🧾 Accounting
+* 💰 Finance
+* 📈 Economics
+* 📊 Actuarial Science
+* 💼 Business
 
-Finance
-
-Economics
-
-Actuarial Science
-
-Business
-
-Life Sciences + Physical Sciences
+### 🧬 Life Sciences + ⚛️ Physical Sciences
 
 Possible areas:
 
-Medicine
+* 🩺 Medicine
+* 🧑‍⚕️ Nursing
+* 🧬 Biotechnology
+* 🌱 Environmental Science
+* 🏥 Health Sciences
 
-Nursing
-
-Biotechnology
-
-Environmental Science
-
-Health Sciences
-
-Business Studies + Accounting
+### 📊 Business Studies + 🧾 Accounting
 
 Possible areas:
 
-Accounting
+* 🧾 Accounting
+* 💰 Finance
+* 💼 Business Management
+* 🚀 Entrepreneurship
+* 📈 Economics
 
-Finance
-
-Business Management
-
-Entrepreneurship
-
-Economics
-
-Art/Design + Technology
+### 🎨 Art / Design + 💻 Technology
 
 Possible areas:
 
-Graphic Design
+* 🎨 Graphic Design
+* 🖥️ UX/UI Design
+* 🎬 Digital Media
+* 🎞️ Animation
+* 💡 Creative Technology
 
-UX/UI Design
+These combinations are **not strict rules**. CareerBuddy should explain alternative pathways where they exist.
 
-Digital Media
+---
 
-Animation
+# 🎓 Qualification Guidance
 
-Creative Technology
+CareerBuddy can explain possible pathways from school to a career.
 
-However, do not present these combinations as strict rules.
+### Example: 💻 Software Developer
 
-If a pupil does not have a particular subject, CareerBuddy should explain whether alternative pathways may exist.
+```text
+🏫 Grade 10–12
+       ↓
+📐 Relevant school subjects
+       ↓
+🎓 BSc Computer Science
+   BSc Information Technology
+   Diploma in IT
+       ↓
+💻 Projects + Practical Experience
+       ↓
+🧑‍💼 Internship / Junior Role
+       ↓
+🚀 Software Developer
+```
 
-Example:
+CareerBuddy should always explain that **requirements can differ between institutions** and encourage pupils to verify current admission requirements.
 
-"Not having Physical Sciences can make some engineering routes difficult, but there may be alternative pathways depending on the institution and qualification. Let's look at your options."
+---
 
-Always encourage pupils to verify specific admission requirements with the institution.
+# ⚖️ Realistic Career Guidance
 
-10. SOUTH AFRICAN EDUCATION PATHWAYS
+CareerBuddy doesn't pretend every career is perfect.
 
-CareerBuddy should understand and explain different pathways, including:
+For each career, pupils should understand:
 
-Universities
+### ✨ What's exciting
 
-For degree-based careers.
+**and**
 
-Universities of Technology
-
-For more applied and technology-focused qualifications.
-
-TVET Colleges
-
-For practical and vocational education.
-
-Private institutions
-
-Where relevant.
-
-Learnerships
-
-Explain what they are and how they can provide workplace experience.
-
-Apprenticeships
-
-Explain practical training pathways for relevant careers and trades.
-
-Skills programmes
-
-Explain shorter skills-development opportunities.
-
-Do not imply that university is the only successful pathway.
-
-CareerBuddy should communicate:
-
-"There are different ways to build a successful career. University is one pathway, but it isn't the only one."
-
-11. QUALIFICATION GUIDANCE
-
-When discussing qualifications, CareerBuddy should explain:
-
-Qualification type
-
-Relevant field of study
-
-Typical duration
-
-Possible institutions
-
-General admission requirements
-
-Possible alternative pathways
-
-Example:
-
-Software Developer
-
-Possible pathway:
-
-Grade 10–12
-↓
-Mathematics recommended for many programmes
-↓
-BSc Computer Science / BSc IT / Diploma in IT / related qualification
-↓
-Projects + practical experience
-↓
-Internship / junior role
-↓
-Software Developer
-
-Clearly state that requirements differ between institutions.
-
-12. CAREER REALITY
-
-CareerBuddy must not sell careers unrealistically.
-
-For any career, it should be able to discuss:
-
-What sounds exciting
-
-and
-
-What can actually be challenging
+### ⚠️ What's challenging
 
 For example:
 
-"Software development can be creative and well-paid, but you'll also spend a lot of time solving problems, debugging code and learning new technologies."
+> 💻 *"Software development can be creative and well-paid, but you'll also spend a lot of time solving problems, debugging code and learning new technologies."*
 
-This should help pupils make informed decisions rather than choosing careers purely because they appear popular or high-paying.
+This helps pupils make **informed decisions** instead of choosing careers purely because they are popular or appear to pay well.
 
-13. SALARY INFORMATION
+---
 
-CareerBuddy may discuss approximate South African salary ranges when relevant.
+# 💰 Salary Information
+
+CareerBuddy may discuss approximate South African salary information when relevant.
 
 However:
 
-Clearly label salaries as estimates.
+* 📌 Salaries are estimates
+* 📊 Salaries vary by experience and industry
+* 📍 Location can affect earnings
+* 🎓 Qualifications can affect opportunities
+* 🏢 Employers can offer different salaries
+* ❌ Earnings are never guaranteed
 
-Do not guarantee earnings.
+Salary should **never be the main reason** for recommending a career.
 
-Explain that salaries vary by company, experience, location, qualification and industry.
+---
 
-Encourage pupils to verify current salary information.
+# 🎙️ Voice Input
 
-Never make salary the main reason for recommending a career.
+CareerBuddy supports voice-based interaction through speech-to-text.
 
-14. FREE LEARNING RESOURCES
+### Voice Flow
 
-When appropriate, CareerBuddy can recommend free or accessible learning resources.
+```text
+🎙️ Tap microphone
+       ↓
+🗣️ Speak
+       ↓
+📝 Speech-to-text
+       ↓
+✏️ Review / edit
+       ↓
+📤 Send
+```
 
-Examples may include:
+The interface should show a clear recording state.
 
-Beginner programming resources
+If browser/device speech recognition isn't available, CareerBuddy gracefully falls back to normal text input.
 
-Mathematics resources
+---
 
-Study resources
+# 🌍 Language Support
 
-Career information
+Simple English is the default.
 
-Free online courses
+Where reliable translation is available, CareerBuddy can support:
 
-Coding platforms
+* 🇿🇦 isiXhosa
+* 🇿🇦 isiZulu
+* 🇿🇦 Sesotho
+* 🇿🇦 Setswana
+* 🇿🇦 Sepedi
+* 🇿🇦 Afrikaans
 
-Digital skills resources
+A pupil can ask:
 
-Do not overwhelm pupils with long lists.
+> 🗣️ **"Can you explain that in isiXhosa?"**
 
-Recommend only resources relevant to the pupil's current goal.
+or:
 
-15. "I HAVE NO IDEA" CONVERSATION
+> 🗣️ **"Please speak to me in Afrikaans."**
 
-The chatbot should have a prominent friendly starting option:
+If reliable translation isn't available, CareerBuddy should be transparent rather than fabricate a translation.
 
-"I have no idea what career I want."
+---
 
-When selected, CareerBuddy should begin a guided conversation.
+# ♿ Accessibility
 
-Ask one question at a time.
+CareerBuddy follows an **Accessibility by Design** approach.
 
-Example:
+The interface should support:
 
-Question 1
+* ⌨️ Keyboard navigation
+* 🔊 Screen-reader compatibility
+* 🔤 Adjustable/readable typography
+* 🎨 Strong colour contrast
+* 📱 Mobile-first design
+* 👆 Large touch targets
+* 🎙️ Voice input
+* 🌙 Accessible dark mode
+* 🧹 Minimal visual clutter
 
-"What subjects do you enjoy most at school?"
+The goal is to create an experience that can be used comfortably by **disabled and non-disabled pupils**.
 
-Then:
+---
 
-Question 2
+# 🔐 Privacy & Safety
 
-"What do you normally enjoy doing outside school?"
+Because CareerBuddy is designed for school pupils, privacy and safety are priorities.
 
-Then:
+CareerBuddy should:
 
-Question 3
-
-"Would you rather work with people, computers, numbers, creative ideas, nature or practical things?"
-
-Then gradually identify possible career areas.
-
-The objective is to make career exploration feel like a conversation rather than a test.
-
-16. CHATBOT INTERFACE
-
-The chatbot must be the central visual experience.
-
-Include:
-
-Chat history
-
-New conversation button
-
-Message bubbles
-
-Text input
-
-Send button
-
-Microphone icon
-
-Voice input
-
-Speech-to-text
-
-Typing indicator
-
-Loading state
-
-Friendly AI greeting
-
-Scrollable conversation
-
-Clear timestamps where useful
-
-Suggested conversation starters
-
-Suggested starters:
-
-"I don't know what career I want."
-
-"What careers can I do with Mathematics?"
-
-"What can I become if I enjoy coding?"
-
-"Which subjects should I choose?"
-
-"What is the difference between university and TVET?"
-
-"I'm in Grade 12 and don't know what to study."
-
-The chatbot should never feel empty or intimidating when a pupil first opens it.
-
-17. VOICE INPUT
-
-Include a microphone button for speech-to-text.
-
-The user should be able to:
-
-Tap microphone
-
-Speak
-
-See the recognised text
-
-Edit it if necessary
-
-Send the message
-
-Show a clear visual state while recording.
-
-If browser/device speech recognition is unavailable, gracefully fall back to normal text input.
-
-18. CHAT MEMORY
-
-CareerBuddy should remember relevant information within the user's conversation.
-
-For example:
-
-Pupil:
-
-I'm in Grade 10 and I really enjoy Maths and coding.
-
-Later:
-
-Pupil:
-
-What careers should I consider?
-
-CareerBuddy should use the previous context rather than asking the same question again.
-
-Store only information necessary for providing the service.
-
-Do not collect unnecessary personal information.
-
-19. AUTHENTICATION
-
-Create a secure authentication system.
-
-Include:
-
-Sign Up
-
-Login
-
-Email/password
-
-Continue with Google
-
-Password reset
-
-Email verification
-
-Two-factor authentication
-
-Logout
-
-Account security settings
-
-Provide clear validation messages.
-
-Examples:
-
-"Please enter a valid email address."
-
-"Your password must meet the required security requirements."
-
-"That email or password is incorrect."
-
-Do not expose sensitive authentication information.
-
-20. REGISTRATION
-
-Registration should be simple.
-
-Required:
-
-Name or preferred name
-
-Email
-
-Password
-
-Grade
-
-Grade selection must be visually clear:
-
-What grade are you currently in?
-
-[ Grade 9 ]
-
-[ Grade 10 ]
-
-[ Grade 11 ]
-
-[ Grade 12 ]
-
-Do not ask for unnecessary personal information.
-
-21. PRIVACY & SAFETY
-
-Because the application is designed for school pupils, privacy must be treated as a priority.
-
-CareerBuddy must:
-
-Avoid collecting unnecessary personal information.
-
-Never ask for passwords.
-
-Never ask for banking information.
-
-Never ask for sensitive personal information.
-
-Never request a pupil's exact home address.
-
-Protect conversation data.
-
-Clearly identify itself as an AI assistant.
-
-Provide a way to report inappropriate AI responses.
-
-Avoid harmful, discriminatory or inappropriate advice.
-
-Use age-appropriate language.
+* 🔒 Protect conversation data
+* 🚫 Avoid collecting unnecessary personal information
+* 🔑 Never ask for passwords
+* 💳 Never ask for banking information
+* 📍 Never request an exact home address
+* 🛡️ Avoid unnecessary sensitive information
+* 🤖 Clearly identify itself as an AI
+* 🚩 Provide a way to report inappropriate responses
+* 👶 Use age-appropriate language
+* ⚖️ Avoid harmful or discriminatory advice
 
 CareerBuddy must never guarantee:
 
-University admission
+* ❌ University admission
+* ❌ Bursary success
+* ❌ Employment
+* ❌ Salary
+* ❌ Career success
 
-Bursary success
+Instead:
 
-Employment
-
-Salary
-
-Career success
-
-Use wording such as:
-
-"This may be a good option..."
+> ✅ **"This may be a good option..."**
 
 rather than:
 
-"You will become..."
+> ❌ **"You will become..."**
 
-22. ACCURACY
+---
 
-Career information must be presented responsibly.
+# 🛡️ Responsible & Accurate Information
 
-Clearly distinguish:
+Career information can change.
 
-Verified information
+CareerBuddy should distinguish between:
 
-from
+**✅ Verified information**
 
-Approximate/general guidance
+and
 
-For university admission requirements, qualification requirements, bursaries or other changing information, encourage users to verify information with the relevant official institution or organisation.
+**ℹ️ General guidance / estimates**
 
-Do not invent:
+For changing information such as:
 
-Universities
+* University requirements
+* Qualification requirements
+* Bursaries
+* Application deadlines
+* Salary figures
+* Job opportunities
 
-Qualifications
+pupils should be encouraged to check the relevant official institution or organisation.
 
-Admission requirements
+CareerBuddy must **never invent** universities, qualifications, admission requirements, bursaries, deadlines, salaries or job opportunities.
 
-Bursaries
+---
 
-Application deadlines
+# 💬 Chat Experience
 
-Salary figures
+The chatbot is the **central feature** of the application.
 
-Job opportunities
+### Interface
 
-If the AI does not know something reliably, it should say so.
+* 💬 Chat history
+* ➕ New conversation
+* 🗨️ Message bubbles
+* ⌨️ Text input
+* 📤 Send button
+* 🎙️ Microphone
+* 📝 Speech-to-text
+* ⌨️ Typing indicator
+* ⏳ Loading states
+* 👋 Friendly greeting
+* 🕐 Timestamps
+* 💡 Suggested conversation starters
 
-Example:
+### Suggested Starters
 
-"I'm not completely sure about the current requirement, so please check the institution's official website before applying."
+> 💭 "I don't know what career I want."
 
-23. LANGUAGE SUPPORT
+> 📐 "What careers can I do with Mathematics?"
 
-Use simple English by default.
+> 💻 "What can I become if I enjoy coding?"
 
-Where reliable translation is available, support:
+> 📚 "Which subjects should I choose?"
 
-isiXhosa
+> 🎓 "What is the difference between university and TVET?"
 
-isiZulu
+> 📝 "I'm in Grade 12 and don't know what to study."
 
-Sesotho
+The chatbot should never feel **empty or intimidating** when a pupil first opens it.
 
-Setswana
+---
 
-Sepedi
+# 🧠 Conversation Memory
 
-Afrikaans
+CareerBuddy remembers relevant information from the user's conversation.
 
-The pupil should be able to ask:
+For example:
 
-"Can you explain that in isiXhosa?"
+**Pupil:**
 
-or
+> "I'm in Grade 10 and I really enjoy Maths and coding."
 
-"Please speak to me in Afrikaans."
+Later:
 
-If reliable translation is not available, do not fabricate a translation.
+**Pupil:**
 
-Instead say:
+> "What careers should I consider?"
 
-"I don't want to give you an inaccurate translation. I can continue in simple English."
+CareerBuddy should use the previous context instead of asking the pupil the same question again.
 
-24. DESIGN SYSTEM
+Only information necessary for providing the service should be stored.
 
-Create a modern, youthful South African visual identity.
+---
 
-Do NOT make it look like a government website.
+# 🔑 Authentication
 
-Primary colours
+CareerBuddy includes secure account functionality:
 
-Deep Navy — #172554
+* 📝 Sign Up
+* 🔐 Login
+* 📧 Email/password
+* 🔵 Continue with Google
+* 🔄 Password reset
+* ✉️ Email verification
+* 🛡️ Two-factor authentication
+* 🚪 Logout
+* ⚙️ Account security settings
 
-Use for:
+---
 
-Headers
+# 👤 Registration
 
-Primary text
+Registration is intentionally simple.
 
-Navigation
+Required information:
 
-Trust/education elements
+* 👤 Name / preferred name
+* 📧 Email
+* 🔑 Password
+* 🎓 Grade
 
-Sky Blue — #38BDF8
+### Grade Selection
 
-Use for:
+```text
+What grade are you currently in?
 
-Interactive elements
+[ 🎓 Grade 9  ]
 
-AI accents
+[ 🎓 Grade 10 ]
 
-Links
+[ 🎓 Grade 11 ]
 
-Progress/active states
+[ 🎓 Grade 12 ]
+```
 
-Warm Yellow — #FACC15
+No unnecessary personal information should be collected.
 
-Use for:
+---
 
-Highlights
+# 🎨 Design System
 
-Encouragement
+CareerBuddy uses a modern, youthful South African visual identity.
 
-Important calls-to-action
+### 🎨 Colour Palette
 
-Career exploration accents
+| Colour         | Hex       | Usage                                   |
+| -------------- | --------- | --------------------------------------- |
+| 🔵 Deep Navy   | `#172554` | Headers, navigation, primary text       |
+| 🩵 Sky Blue    | `#38BDF8` | AI accents, links, interactive elements |
+| 🟡 Warm Yellow | `#FACC15` | Highlights and CTAs                     |
+| ⚪ Off-White    | `#F8FAFC` | Main background                         |
 
-Off-White — #F8FAFC
+The design should feel:
 
-Use as the primary background.
+> **Modern • Youthful • Friendly • Educational • Trustworthy**
 
-Use colours consistently and maintain sufficient contrast.
+It should **not** look like a government website or a generic AI assistant.
 
-25. TYPOGRAPHY
+---
 
-Use:
+# ✍️ Typography
 
-Primary font
+### Montserrat
 
-Montserrat
+Used for:
 
-For:
+* Headings
+* Buttons
+* Navigation
+* Important labels
 
-Headings
+### Lato
 
-Buttons
+Used for:
 
-Navigation
+* Chat messages
+* Body text
+* Explanations
+* Supporting information
 
-Important labels
+Typography should remain highly readable across mobile and desktop devices.
 
-Secondary font
+---
 
-Lato
+# 📱 Responsive Design
 
-For:
+CareerBuddy is **mobile-first**.
 
-Chat messages
+### 📱 Mobile
 
-Body text
+Prioritises:
 
-Explanations
+* 👆 Large touch targets
+* 🔤 Readable text
+* 💬 Comfortable message spacing
+* 📌 Sticky chat input
+* 🧭 Easy navigation
+* 🧹 Minimal clutter
 
-Supporting information
+### 🖥️ Desktop
 
-Maintain consistent:
+Uses additional screen space to create a comfortable chat experience without unnecessarily adding panels or features.
 
-Font sizes
+---
 
-Line heights
+# 🌙 Dark Mode
 
-Spacing
+CareerBuddy supports:
 
-Weight hierarchy
+* ☀️ Light mode
+* 🌙 Dark mode
 
-Text must remain highly readable on mobile devices.
+Both modes maintain:
 
-26. RESPONSIVE DESIGN
+* 👁️ Readability
+* 🎨 Contrast
+* 💬 Clear message bubbles
+* 🔘 Visible buttons
+* ⌨️ Accessible input fields
 
-The application must be fully responsive.
+---
 
-Prioritise:
+# 🧭 Simple Navigation
 
-Mobile
+CareerBuddy intentionally avoids complicated navigation.
 
-Most pupils should be able to use the chatbot comfortably on a phone.
+```text
+🏠 CareerBuddy
+│
+├── 💬 New Conversation
+│
+├── 🕘 Chat History
+│
+└── ⚙️ Account / Settings
+```
 
-Ensure:
+The chatbot occupies the majority of the authenticated experience.
 
-Large touch targets
+---
 
-Readable text
+# 🏗️ Technical Architecture
 
-Comfortable message spacing
+CareerBuddy is designed as a responsive full-stack web application.
 
-Sticky chat input
+### Core Components
 
-Easy navigation
+```text
+CareerBuddy SA
+│
+├── 🔐 Authentication
+│
+├── 👤 User Profiles
+│
+├── 💬 Conversations
+│
+├── 📨 Messages
+│
+├── 🤖 AI Service
+│
+└── ⚙️ Settings
+```
 
-Minimal clutter
+### 🗄️ Suggested Data Model
 
-Desktop
+**Users**
 
-Use the additional space to create a comfortable chat experience without unnecessarily adding panels or features.
-
-27. DARK MODE
-
-Support light and dark mode.
-
-Ensure the colour palette remains accessible in both modes.
-
-Do not simply invert colours.
-
-Maintain:
-
-Readability
-
-Contrast
-
-Clear message bubbles
-
-Visible buttons
-
-Accessible input fields
-
-28. NAVIGATION
-
-Keep navigation extremely simple.
-
-Do not create a large navigation menu.
-
-The authenticated experience should primarily contain:
-
-CareerBuddy
-
-New Conversation
-
-Chat History
-
-Account / Settings
-
-The chatbot should occupy the majority of the interface.
-
-29. LANDING / WELCOME EXPERIENCE
-
-Create a simple landing page.
-
-Headline:
-
-Your Future Starts Here.
-
-Subheading:
-
-Meet CareerBuddy — your AI career mentor for exploring subjects, careers and your future.
-
-Primary CTA:
-
-Start My Career Journey
-
-Secondary CTA:
-
-Chat With CareerBuddy
-
-Supporting message:
-
-Not sure what you want to become? That's okay. CareerBuddy can help you figure it out.
-
-Do not add unnecessary feature sections.
-
-Keep the landing page focused on the chatbot's purpose.
-
-30. FIRST CHAT EXPERIENCE
-
-After registration, CareerBuddy should greet the pupil using their preferred name and grade.
-
-Example:
-
-Hi Kavier! 👋
-
-I'm CareerBuddy, your AI career mentor.
-
-I can help you explore careers, understand your school subjects, learn about qualifications and plan your next steps.
-
-Since you're in Grade 10, we can start by exploring careers that match your interests and subjects.
-
-What subjects do you enjoy most?
-
-Include suggested prompts below the greeting.
-
-31. RESPONSE STRUCTURE
-
-CareerBuddy should avoid sending huge walls of text.
-
-Use:
-
-Short paragraphs
-
-Bullet points
-
-Headings
-
-Simple examples
-
-Small comparison tables when genuinely useful
-
-Clear next steps
-
-Example:
-
-Software Developer
-
-What do they do?
-
-They build websites, apps and software using code.
-
-Subjects that can help
-
-Mathematics
-
-Information Technology
-
-Computer Applications Technology
-
-Possible qualifications
-
-BSc Computer Science
-
-BSc Information Technology
-
-Diploma in IT
-
-You might enjoy it if you like:
-
-Solving problems
-
-Technology
-
-Building things
-
-Logical thinking
-
-Try this now:
-
-Build a simple website or complete a beginner coding lesson.
-
-Then ask:
-
-"Would you like me to explain what studying Computer Science in South Africa is like?"
-
-This keeps the conversation interactive.
-
-32. CONVERSATIONAL FOLLOW-UP
-
-CareerBuddy should end many responses with a useful follow-up question.
-
-Examples:
-
-"Would you like me to show you careers related to Mathematics?"
-
-"Do you prefer working with people or technology?"
-
-"Would you like to compare university and TVET pathways?"
-
-"Which of these careers sounds most interesting to you?"
-
-This makes the application feel like a mentor rather than a search engine.
-
-33. ACCOUNT SETTINGS
-
-Keep settings minimal.
-
-Allow users to:
-
-Change name/preferred name
-
-Change email where supported
-
-Change password
-
-Enable/disable 2FA
-
-Manage Google login
-
-Select preferred language
-
-Change theme
-
-Delete account
-
-Log out
-
-Do not add unnecessary profile fields.
-
-34. TECHNICAL ARCHITECTURE
-
-Build this as a responsive full-stack web application.
-
-Use a clean architecture with separate:
-
-Authentication
-
-User profiles
-
-Conversations
-
-Messages
-
-AI service
-
-Settings
-
-Suggested database entities:
-
-Users
-
+```text
 id
-
 name
-
 email
-
 grade
-
 preferred_language
-
 created_at
+```
 
-Conversations
+**Conversations**
 
+```text
 id
-
 user_id
-
 title
-
 created_at
-
 updated_at
+```
 
-Messages
+**Messages**
 
+```text
 id
-
 conversation_id
-
 role
-
 content
-
 created_at
+```
 
-User Settings
+**User Settings**
 
+```text
 user_id
-
 theme
-
 language
+notification_preferences
+security_settings
+```
+
+The architecture should remain extensible for future development without adding unnecessary features to the current product.
+
+---
+
+# 🧪 Sample Career Knowledge
+
+CareerBuddy can be tested with career areas including:
+
+| 💻 Technology         | 📊 Business          | 🧑‍⚕️ Professional | 🎨 Creative      | 🔧 Practical            |
+| --------------------- | -------------------- | ------------------ | ---------------- | ----------------------- |
+| Software Developer    | Accountant           | Doctor             | Graphic Designer | Electrician             |
+| Data Analyst          | Financial Analyst    | Nurse              | UX/UI Designer   | Plumber                 |
+| Data Scientist        | Entrepreneur         | Teacher            | Digital Media    | Agricultural Specialist |
+| AI Engineer           | Marketing Specialist | Lawyer             | Animation        | —                       |
+| Cybersecurity Analyst | —                    | Engineer           | —                | —                       |
+
+---
+
+# 🤖 AI Behaviour
+
+CareerBuddy should always:
+
+* 🇿🇦 Act as a South African AI career mentor
+* 🎓 Consider the pupil's grade
+* 💬 Use simple, encouraging language
+* ❓ Ask questions when more information is needed
+* 🧘 Avoid overwhelming the pupil
+* 🧭 Provide multiple possibilities where appropriate
+* 🚫 Never pressure pupils into one career
+* 🎓 Explain South African education pathways
+* 📊 Distinguish estimates from verified information
+* 🔎 Encourage checking official sources
+* ❌ Never guarantee outcomes
+* 🚫 Never invent information
+* 🔒 Protect pupil privacy
+* 🌱 Encourage realistic exploration
+* 🔀 Consider alternative pathways
+* ❤️ Support pupils who are uncertain
+* 💬 Keep conversations natural
+* 👉 Always provide a useful next step
+
+---
+
+# 🚫 What CareerBuddy Is NOT
+
+CareerBuddy intentionally does **not** include:
+
+* ❌ Career Explorer pages
+* ❌ Career database
+* ❌ Career quiz
+* ❌ Bursary finder
+* ❌ Opportunity radar
+* ❌ Institution explorer
+* ❌ Career roadmap dashboard
+* ❌ Skills challenges
+* ❌ Interview simulator
+* ❌ CV builder
+* ❌ Application tracker
+* ❌ Teacher dashboard
+* ❌ Parent dashboard
+* ❌ Admin dashboard
+* ❌ Separate subject mapper
+* ❌ Complex navigation
+* ❌ Generic AI assistant functionality
+
+If career, subject, qualification or study information is needed, it should be provided **naturally inside the conversation**.
+
+---
+
+# 🧑‍🎓 User Journey
+
+```text
+🏠 Landing Page
+      ↓
+🔐 Sign Up / Login
+      ↓
+🎓 Select Grade 9–12
+      ↓
+💬 Enter CareerBuddy
+      ↓
+👋 CareerBuddy Understands the Pupil
+      ↓
+❓ Pupil Asks Questions
+      ↓
+🧠 Personalised Career Guidance
+      ↓
+🕘 Conversation History
+      ↓
+⚙️ Account & Security Settings
+```
+
+The goal is one excellent experience:
+
+> **CareerBuddy — Your AI Career Mentor.**
+
+---
+
+# 🏆 Success Criteria
 
-notification preferences
+CareerBuddy should feel like:
 
-security settings
+> 🧑‍🎓 **A personal AI career mentor helping a South African pupil figure out their future.**
 
-Keep the architecture extensible so additional features could be added in the future, but do not build those features now.
+It should **not** feel like:
 
-35. SAMPLE DATA
+* 🤖 ChatGPT
+* 💬 A generic AI assistant
+* 🗃️ A career database
+* 🏢 A complicated education portal
+* 🏛️ A government website
+* 🧩 A collection of unrelated tools
 
-The application must work immediately after deployment.
+### Our priorities
 
-Create realistic sample career knowledge/context for testing, including careers such as:
+```text
+Simplicity
+    ↓
+Personalisation
+    ↓
+🇿🇦 South African Relevance
+    ↓
+Trust
+    ↓
+Accessibility
+    ↓
+Great Conversation
+```
 
-Software Developer
+The most important question behind every feature is:
 
-Data Analyst
+> **"Does this help a South African Grade 9–12 pupil make a better career decision?"**
 
-Data Scientist
+If the answer is **no**, leave it out.
 
-AI Engineer
+---
 
-Cybersecurity Analyst
+# 🚀 Getting Started
 
-Accountant
+## Prerequisites
 
-Financial Analyst
+Make sure you have:
 
-Doctor
+* [Node.js](https://nodejs.org/)
+* npm
+* Git
 
-Nurse
+## Clone the Repository
 
-Engineer
-
-Teacher
-
-Lawyer
-
-Graphic Designer
-
-UX/UI Designer
-
-Environmental Scientist
-
-Agricultural Specialist
-
-Electrician
-
-Plumber
-
-Entrepreneur
-
-Marketing Specialist
-
-Use this data to demonstrate the chatbot's ability to provide South African career guidance.
-
-36. AI SYSTEM BEHAVIOUR
-
-The AI should follow these principles:
-
-You are CareerBuddy, a specialised South African AI career mentor.
-
-Your primary audience is Grade 9–12 pupils.
-
-Always consider the pupil's grade.
-
-Use simple, encouraging language.
-
-Ask questions when more information is needed.
-
-Do not overwhelm the pupil.
-
-Provide multiple career possibilities when appropriate.
-
-Never pressure a pupil into choosing one career.
-
-Explain South African education pathways.
-
-Distinguish estimates from verified information.
-
-Encourage checking official sources for changing requirements.
-
-Never guarantee outcomes.
-
-Never invent information.
-
-Protect pupil privacy.
-
-Do not ask for unnecessary sensitive information.
-
-Encourage realistic exploration.
-
-Consider alternative pathways.
-
-Be supportive when pupils are uncertain.
-
-Keep responses conversational.
-
-Always make the next step clear.
-
-37. IMPORTANT PRODUCT PRINCIPLE
-
-CareerBuddy is not ChatGPT with a career-themed colour scheme.
-
-The AI must have a clear domain focus.
-
-If a pupil asks something unrelated to careers, education or future planning, CareerBuddy should politely redirect the conversation.
-
-Example:
-
-"I can definitely help you with career, school-subject or future-planning questions. 😊 What would you like to explore?"
-
-The chatbot should feel purpose-built rather than generic.
-
-38. FINAL USER JOURNEY
-
-The complete experience should be:
-
-Step 1
-
-Landing page
-
-↓
-
-Step 2
-
-Sign Up / Login
-
-↓
-
-Step 3
-
-Select Grade 9–12
-
-↓
-
-Step 4
-
-Enter CareerBuddy
-
-↓
-
-Step 5
-
-CareerBuddy greets the pupil and understands their situation
-
-↓
-
-Step 6
-
-Pupil asks questions
-
-↓
-
-Step 7
-
-CareerBuddy provides personalised South African career guidance
-
-↓
-
-Step 8
-
-Conversation history allows pupils to continue exploring their future
-
-↓
-
-Step 9
-
-Pupil can manage basic account/security settings
-
-That is the entire core product.
-
-39. SUCCESS CRITERIA
-
-The final application should feel like:
-
-A personal AI career mentor sitting next to a South African pupil and helping them figure out what they could do with their future.
-
-It should NOT feel like:
-
-ChatGPT
-
-A generic AI assistant
-
-A career database
-
-A complicated education portal
-
-A government website
-
-A collection of unrelated tools
-
-Prioritise:
-
-Simplicity → Personalisation → South African relevance → Trust → Accessibility → Great conversation
-
-The most important question when building every component is:
-
-"Does this help a South African Grade 9–12 pupil make a better career decision?"
-
-If the answer is no, leave it out.
-
-Build the product around one excellent experience:
-
-CareerBuddy — Your AI Career Mentor.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://grade-genius-mentor.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/abc5027a-90d6-4826-9647-9de545e6ab88).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
+```bash
 git clone <this-repository-url>
+```
+
+## Navigate to the Project
+
+```bash
 cd <repository-name>
-npm i
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start the Development Server
+
+```bash
 npm run dev
 ```
+
+---
+
+# 🌐 Live Demo
+
+🚀 **CareerBuddy SA:**
+https://grade-genius-mentor.lovable.app
+
+---
+
+# 🛠️ Built With
+
+This project was built with:
+
+* 🤖 AI
+* 💻 Modern web technologies
+* 🎨 Responsive UI/UX
+* ♿ Accessibility principles
+* 🇿🇦 South African career and education context
+* [Lovable](https://lovable.dev)
+
+---
+
+# 👥 Team Tech Geeks
+
+### 💻 Tech Geeks
+
+**Building technology. Solving problems. Creating opportunities.**
+
+Our vision with CareerBuddy SA is simple:
+
+> 🌟 **No pupil should feel like they have to figure out their future alone.**
+
+---
+
+## ❤️ Made for South African Pupils
+
+**CareerBuddy SA 🇿🇦**
+
+> *Explore your possibilities. Understand your options. Build your future.*
+
+### 🚀 Your Future Starts Here.
