@@ -2,11 +2,12 @@ import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, type UIMessage } from "ai";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCallback, useMemo, useRef, useState } from "react";
-import { Flag, Mic, MicOff } from "lucide-react";
+import { Flag, Loader2, Mic, MicOff, Pause, Play, Square, Volume2 } from "lucide-react";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { useSpeechInput } from "@/hooks/useSpeechInput";
+import { useReadAloud } from "@/hooks/useReadAloud";
 import {
   Conversation,
   ConversationContent,
