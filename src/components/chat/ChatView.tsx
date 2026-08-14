@@ -136,6 +136,18 @@ export function ChatView({ conversationId }: { conversationId: string }) {
   const busy = status === "submitted" || status === "streaming";
 
   const speech = useSpeechInput((text) => setInput(text));
+  const readAloud = useReadAloud(session?.access_token);
+
+  const toggleReadAloud = (id: string, text: string) => {
+    if (readAloud.activeId === id) {
+      if (readAloud.state === "playing") return readAloud.pause();
+      if (readAloud.state === "paused") return readAloud.resume();
+      return;
+    }
+    void readAloud.play(id, text, () =>
+      toast.error("CareerBuddy couldn't read that out loud. Please try again."),
+    );
+  };
 
   const send = async (text: string) => {
     const trimmed = text.trim();
@@ -226,7 +238,60 @@ export function ChatView({ conversationId }: { conversationId: string }) {
                 >
                   <MessageResponse>{text}</MessageResponse>
                   {message.role === "assistant" && (
-                    <MessageActions className="mt-1">
+                    <MessageActions className="mt-1 flex items-center gap-1">
+                      {(() => {
+                        const active = readAloud.activeId === message.id;
+                        const state = active ? readAloud.state : "idle";
+                        const label =
+                          state === "loading"
+                            ? "Preparing audio"
+                            : state === "playing"
+                              ? "Pause reading"
+                              : state === "paused"
+                                ? "Continue reading"
+                                : "Read this reply aloud";
+                        return (
+                          <>
+                            <MessageAction
+                              tooltip={label}
+                              label={label}
+                              onClick={() => toggleReadAloud(message.id, text)}
+                              className={cn(
+                                "transition-all duration-200",
+                                active && "text-secondary-foreground bg-secondary/25",
+                              )}
+                            >
+                              {state === "loading" ? (
+                                <Loader2 className="h-4 w-4 animate-spin" />
+                              ) : state === "playing" ? (
+                                <Pause className="h-4 w-4" />
+                              ) : state === "paused" ? (
+                                <Play className="h-4 w-4" />
+                              ) : (
+                                <Volume2 className="h-4 w-4" />
+                              )}
+                            </MessageAction>
+                            {active && state !== "idle" && (
+                              <>
+                                <MessageAction
+                                  tooltip="Stop reading"
+                                  label="Stop reading"
+                                  onClick={readAloud.stop}
+                                >
+                                  <Square className="h-4 w-4" />
+                                </MessageAction>
+                                <span className="text-[11px] font-medium text-muted-foreground">
+                                  {state === "loading"
+                                    ? "Preparing…"
+                                    : state === "playing"
+                                      ? "Reading aloud…"
+                                      : "Paused"}
+                                </span>
+                              </>
+                            )}
+                          </>
+                        );
+                      })()}
                       <MessageAction
                         tooltip="Report this reply"
                         label="Report this reply"
