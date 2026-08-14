@@ -9,7 +9,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { BuddyWordmark } from "@/components/BuddyMark";
+import { BuddyMark, BuddyWordmark } from "@/components/BuddyMark";
+import { GoogleIcon } from "@/components/GoogleIcon";
 import { cn } from "@/lib/utils";
 
 const searchSchema = z.object({
@@ -150,13 +151,13 @@ function AuthPage() {
   if (confirmSent) {
     return (
       <Shell>
-        <div className="surface-card p-6 text-center">
+        <div className="surface-card animate-fade-up p-7 text-center">
           <h1 className="text-xl">Almost there! 📧</h1>
           <p className="mt-3 text-sm text-muted-foreground">
             We sent a confirmation link to <strong>{email}</strong>. Click it to confirm
             your email, then come back and log in.
           </p>
-          <Button className="mt-5 w-full" onClick={() => setConfirmSent(false)}>
+          <Button className="mt-5 w-full rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow" onClick={() => setConfirmSent(false)}>
             Back to login
           </Button>
         </div>
@@ -167,13 +168,23 @@ function AuthPage() {
   return (
     <Shell>
       <Tabs value={tab} onValueChange={(v) => setTab(v as "login" | "signup")}>
-        <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="login">Log in</TabsTrigger>
-          <TabsTrigger value="signup">Sign up</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-2 rounded-full bg-muted p-1">
+          <TabsTrigger
+            value="login"
+            className="rounded-full text-sm font-semibold transition-all duration-200"
+          >
+            Log in
+          </TabsTrigger>
+          <TabsTrigger
+            value="signup"
+            className="rounded-full text-sm font-semibold transition-all duration-200"
+          >
+            Sign up
+          </TabsTrigger>
         </TabsList>
 
         <TabsContent value="login">
-          <form onSubmit={handleLogin} className="surface-card space-y-4 p-6">
+          <form onSubmit={handleLogin} className="surface-card animate-fade-up space-y-4 p-6 sm:p-7">
             <div className="space-y-2">
               <Label htmlFor="login-email">Email</Label>
               <Input
@@ -196,7 +207,11 @@ function AuthPage() {
                 required
               />
             </div>
-            <Button type="submit" className="w-full" disabled={busy}>
+            <Button
+              type="submit"
+              className="w-full rounded-full shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
+              disabled={busy}
+            >
               Log in
             </Button>
             <button
@@ -211,7 +226,7 @@ function AuthPage() {
         </TabsContent>
 
         <TabsContent value="signup">
-          <form onSubmit={handleSignup} className="surface-card space-y-4 p-6">
+          <form onSubmit={handleSignup} className="surface-card animate-fade-up space-y-4 p-6 sm:p-7">
             <div className="space-y-2">
               <Label htmlFor="name">What should CareerBuddy call you?</Label>
               <Input
@@ -259,10 +274,10 @@ function AuthPage() {
                     onClick={() => setGrade(g)}
                     aria-pressed={grade === g}
                     className={cn(
-                      "rounded-xl border px-3 py-3 text-sm font-semibold transition-colors",
+                      "rounded-2xl border px-3 py-3 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5",
                       grade === g
-                        ? "border-secondary bg-secondary text-secondary-foreground"
-                        : "border-border bg-card text-foreground hover:bg-accent",
+                        ? "border-secondary bg-secondary text-secondary-foreground shadow-soft"
+                        : "border-border bg-card text-foreground hover:border-secondary hover:bg-accent",
                     )}
                   >
                     Grade {g}
@@ -271,7 +286,11 @@ function AuthPage() {
               </div>
             </div>
 
-            <Button type="submit" className="w-full" disabled={busy}>
+            <Button
+              type="submit"
+              className="w-full rounded-full shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
+              disabled={busy}
+            >
               Start My Career Journey
             </Button>
             <GoogleButton onClick={handleGoogle} disabled={busy} />
@@ -300,10 +319,11 @@ function GoogleButton({
       <Button
         type="button"
         variant="outline"
-        className="w-full"
+        className="w-full gap-2 rounded-full font-semibold transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent hover:shadow-soft"
         onClick={onClick}
         disabled={disabled}
       >
+        <GoogleIcon className="h-[18px] w-[18px]" />
         Continue with Google
       </Button>
     </>
@@ -312,11 +332,20 @@ function GoogleButton({
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-background px-5 py-10">
-      <Link to="/" className="mb-6">
+    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-background px-5 py-12">
+      <div className="pointer-events-none absolute -top-40 -right-32 h-96 w-96 rounded-full bg-secondary/25 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 -left-28 h-80 w-80 rounded-full bg-highlight/20 blur-3xl" />
+
+      <Link
+        to="/"
+        className="relative mb-3 transition-transform duration-200 hover:scale-[1.03]"
+      >
         <BuddyWordmark />
       </Link>
-      <div className="w-full max-w-md space-y-4">{children}</div>
+      <p className="relative mb-7 flex items-center gap-2 text-center text-sm text-muted-foreground">
+        <BuddyMark className="h-4 w-4" /> Your AI career mentor for Grade 9–12
+      </p>
+      <div className="relative w-full max-w-md space-y-4">{children}</div>
     </main>
   );
 }
